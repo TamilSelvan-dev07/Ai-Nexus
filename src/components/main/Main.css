@@ -1,0 +1,260 @@
+.container{
+
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+}
+
+
+
+.left-side{
+
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.left-side img{
+
+    width: 50px;
+}
+
+.left-side p{
+
+    font-size: 1.5rem;
+}
+
+.user img{
+
+    width: 45px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.container-1{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.container-2{
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 900px;
+    gap: 30px;
+}
+
+.text{
+
+    font-size: 3rem;
+    font-weight: 500;
+    color: #c4c7c5;
+    margin: 50px 0;
+
+}
+
+.text p span{
+
+    background: linear-gradient(90deg,blue,purple,red,orange);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.box{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    gap: 15px;
+}
+
+.boxes{
+
+    background-color: #dfe8f4;
+    border-radius: 5px;
+    height: 100px;
+    padding: 15px;
+    position: relative;
+
+}
+
+.boxes:hover{
+
+    background-color: #dfe4ea;
+}
+
+.icons{
+
+    position: absolute;
+    font-size: 1.3rem;
+    right: 15px;
+    bottom: 15px;
+}
+
+.container-3{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    bottom: 0px;
+    padding: 0 20px;
+}
+
+.input-box{
+    
+
+    background-color: #dfe8f4;
+    display: flex;
+    padding: 10px 20px;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+
+.input-box input{
+
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 1rem;
+    background: transparent;
+}
+
+.container-3 p{
+    margin: 15px 0;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.input-icon{
+
+    font-size: 1.3rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.Result{
+
+    padding: 0 5%;
+    overflow-y: scroll;
+    max-height: 70vh;
+
+}
+
+.Result::-webkit-scrollbar{
+
+    display: none;
+}
+
+.title{
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.title img{
+ 
+    width: 40px;
+    border-radius: 50px;
+}
+
+.result-data{
+
+    margin-top: 40px;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.result-data img{
+  
+     width: 35px;
+}
+
+
+.loader {
+    height: 20px;
+    aspect-ratio: 2.5;
+    --_g: no-repeat radial-gradient(farthest-side,rgb(0, 156, 156) 90%,#0055ff00);
+    background: var(--_g), var(--_g), var(--_g), var(--_g);
+    background-size: 20% 50%;
+    animation: loader 1s infinite linear alternate; 
+  }
+  @keyframes loader {
+    0%,
+    5%    {background-position: calc(0*100%/3) 50% ,calc(1*100%/3) 50% ,calc(2*100%/3) 50% ,calc(3*100%/3) 50% }
+    12.5% {background-position: calc(0*100%/3) 0   ,calc(1*100%/3) 50% ,calc(2*100%/3) 50% ,calc(3*100%/3) 50% }
+    25%   {background-position: calc(0*100%/3) 0   ,calc(1*100%/3) 0   ,calc(2*100%/3) 50% ,calc(3*100%/3) 50% }
+    37.5% {background-position: calc(0*100%/3) 100%,calc(1*100%/3) 0   ,calc(2*100%/3) 0   ,calc(3*100%/3) 50% }
+    50%   {background-position: calc(0*100%/3) 100%,calc(1*100%/3) 100%,calc(2*100%/3) 0   ,calc(3*100%/3) 0   }
+    62.5% {background-position: calc(0*100%/3) 50% ,calc(1*100%/3) 100%,calc(2*100%/3) 100%,calc(3*100%/3) 0   }
+    75%   {background-position: calc(0*100%/3) 50% ,calc(1*100%/3) 50% ,calc(2*100%/3) 100%,calc(3*100%/3) 100%}
+    87.5% {background-position: calc(0*100%/3) 50% ,calc(1*100%/3) 50% ,calc(2*100%/3) 50% ,calc(3*100%/3) 100%}
+    95%,
+    100%  {background-position: calc(0*100%/3) 50% ,calc(1*100%/3) 50% ,calc(2*100%/3) 50% ,calc(3*100%/3) 50% }
+  }
+
+  .result-data p{
+
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  @media (max-width:600px) {
+    
+    .container{
+        padding: 10px;
+    }
+
+    .container-1{
+        
+        padding: 0 5px;
+        
+    }
+
+
+    .container-3 input{
+        flex: none;
+        width: 185px;
+        
+        
+    }
+    .input-box{
+
+       position: absolute;
+       margin-top: 20px;
+    }
+
+    .input-icon{
+        width: 20px;
+    }
+
+    .container-3 p{
+
+        position: absolute;
+        margin-top: 100px;
+        padding-bottom: 20px;
+        padding-right: 30px;
+    }
+
+    .Result{
+
+        min-height: 85vh;
+    }
+
+    
+  }
+
+
+
+
+
